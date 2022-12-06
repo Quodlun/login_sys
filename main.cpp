@@ -10,8 +10,11 @@ int main()
 
   while (true) 
   {
-    printf(">> Password:");
-    cin >> passa;
+    printf (">> Account: ");
+    cin >> accoinput;
+    
+    printf (">> Password: ");
+    cin >> passinput;
 
     if (passa == "7355608") 
     {
@@ -22,6 +25,7 @@ int main()
     }
 
     else 
+
     {
       error ++;
 

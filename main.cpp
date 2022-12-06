@@ -4,8 +4,8 @@ using namespace std;
 
 int main() 
 {
-  string accoa = "Quodlun", accob = "JoshphJoestar";
-  string passa = "zj4joxu3", passb = "ALex28612";
+  string accoa = "Quodlun", accob = "JoshphJoestar", accoinput;
+  string passa = "zj4joxu3", passb = "ALex28612", passinput;
   int error = 0;
 
   while (true) 

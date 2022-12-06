@@ -2,7 +2,7 @@
 #include <unistd.h>
 using namespace std;
 
-int main() 
+int main () 
 {
   string accoa = "Quodlun", accob = "JoshphJoestar", accoinput;
   string passa = "zj4joxu3", passb = "ALex28612", passinput;
@@ -32,7 +32,7 @@ int main()
  
     if (error == 5) 
     {
-      printf("Error 5 times, plese try again 30 seconds later\n");
+      printf ("Error 5 times, plese try again 30 seconds later\n");
 
       error = 0;
       sleep (30);
@@ -42,5 +42,3 @@ int main()
   
   return 0;
 }
-
-

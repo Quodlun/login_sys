@@ -16,28 +16,26 @@ int main()
     printf (">> Password: ");
     cin >> passinput;
 
-    if (passa == "7355608") 
+    if (accoinput == accoa and passinput == passa or accoinput == accob and passinput == passb)
     {
-      printf(">> Login successful.\n");
+      printf ("Login successful.\n");
 
-      sleep (3);
       return 0;
     }
-
+    
     else 
-
     {
       error ++;
 
-      printf (">> Error (%d times).\n", error);
+      printf (">> Account or password error. (%d times).\n", error);
     }
-
-    if (error == 3) 
+ 
+    if (error == 5) 
     {
-      printf("錯誤次數超過3次，請一分鐘後重試\n");
+      printf("Error 5 times, plese try again 30 seconds later\n");
 
       error = 0;
-      sleep (5);
+      sleep (30);
     }
     
   }

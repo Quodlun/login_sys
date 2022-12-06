@@ -4,15 +4,16 @@ using namespace std;
 
 int main() 
 {
-  string password;
+  string accoa = "Quodlun", accob = "JoshphJoestar";
+  string passa = "zj4joxu3", passb = "ALex28612";
   int error = 0;
 
   while (true) 
   {
     printf(">> Password:");
-    cin >> password;
+    cin >> passa;
 
-    if (password == "7355608") 
+    if (passa == "7355608") 
     {
       printf(">> Login successful.\n");
 
@@ -25,8 +26,6 @@ int main()
       error ++;
 
       printf (">> Error (%d times).\n", error);
-
-      sleep (0.5);
     }
 
     if (error == 3) 

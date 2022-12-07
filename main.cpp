@@ -8,6 +8,7 @@ int main ()
   string accoa = "Quodlun", accob = "JoshphJoestar", accoinput;
   string passa = "zj4joxu3", passb = "ALex28612", passinput;
   int error = 0;
+  int x = 0;
 
   while (true) 
   {
@@ -19,7 +20,7 @@ int main ()
 
     if (accoinput == accoa and passinput == passa or accoinput == accob and passinput == passb)
     {
-      printf ("Login successful.\n");
+      printf (">> Login successful.\n");
 
       break;
     }
@@ -33,33 +34,33 @@ int main ()
  
     if (error == 5) 
     {
-      printf ("Error 5 times, plese try again 30 seconds later\n");
+      printf (">> Error 5 times, plese try again 30 seconds later\n");
 
       error = 0;
       sleep (30);
     }
-    
   }
 
-  sleep (3);
+  sleep (1);
     
   int randinput;
   bool verify = false;
 
   while (verify == false)
   {
-    int min = 1;
-    int max = 9;
+    int vinput;
+    int x = 0;
     
-    int randx = rand() % (max - min + 1) + min;
-  
-    printf ("Enter this number below: %d\n");
-    cin >> randinput;
+    x = rand() % (99999 - 10000 + 1) + 10000;
 
-    if (randinput == randx)
+    printf (">> Type this munber below: %d\n", x);
+    cin >> vinput;
+    
+    if (vinput == x)
     {
       verify = true;
-      printf ("verify successful.\n");
+
+      printf (">> Verify successful.\n");
     }
   }
   return 0;

@@ -43,25 +43,38 @@ int main ()
 
   sleep (1);
     
-  int randinput;
-  bool verify = false;
-
-  while (verify == false)
+  char a[4];
+  int sum = 0;
+  
+  for (int i=0;i<4;i++)
   {
-    int vinput;
-    int x = 0;
+    sum = rand();
+    sum %= 62; 
     
-    x = rand() % (99999 - 10000 + 1) + 10000;
-
-    printf (">> Type this munber below: %d\n", x);
-    cin >> vinput;
-    
-    if (vinput == x)
+    if (sum <= 10)
     {
-      verify = true;
-
-      printf (">> Verify successful.\n");
+      sum = sum + 47;
     }
+      
+    else if (sum <= 36)
+    {
+      sum = sum + 54;
+    }
+      
+    else
+    {
+      sum = sum + 60;
+    }
+    
+    a[i] = (char)sum;
   }
+  
+  for (int i=0;i<4;i++)
+  {
+    printf ("%c", a[i]);
+  }
+
+  printf ("\n");
+  
   return 0;
 }

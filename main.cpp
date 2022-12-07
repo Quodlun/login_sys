@@ -1,5 +1,6 @@
 #include <iostream>
 #include <unistd.h>
+#include <stdlib.h>
 using namespace std;
 
 int main () 
@@ -20,7 +21,7 @@ int main ()
     {
       printf ("Login successful.\n");
 
-      return 0;
+      break;
     }
     
     else 
@@ -39,6 +40,27 @@ int main ()
     }
     
   }
+
+  sleep (3);
+    
+  int randinput;
+  bool verify = false;
+
+  while (verify == false)
+  {
+    int min = 1;
+    int max = 9;
+    
+    int randx = rand() % (max - min + 1) + min;
   
+    printf ("Enter this number below: %d\n");
+    cin >> randinput;
+
+    if (randinput == randx)
+    {
+      verify = true;
+      printf ("verify successful.\n");
+    }
+  }
   return 0;
 }
